@@ -1,3 +1,14 @@
-<p>
-  input works!
-</p>
+<app-label>{{ label }}</app-label>
+<input
+  type="text"
+  placeholder="{{placeholder}}"
+  maxlength="{{maxLength}}"
+  disabled="{{disabled}}"
+  required="{{required}}"
+  #name="ngModel"
+  [(ngModel)]="value"
+  (change)="change($event.target.value)"
+  [pattern]="pattern"
+/>
+<p class="invalid" *ngIf="required && name.errors && name.errors['required'] && name.dirty && name.invalid">{{ errorMessage }}</p>
+<p class="invalid" *ngIf="pattern && name.errors && name.errors['pattern']">{{patternErrorMsg}}</p>
