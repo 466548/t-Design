@@ -1,0 +1,59 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0; 
+}
+
+h1 {
+  font-size: 2rem; 
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1.00rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+h2, h3, h4, h5, h6{
+  line-height: 1;
+}
+
+p, ul, ol, dl, address {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+pre {
+  white-space: pre-wrap; 
+}
+
+hr {
+  border: .5px solid;
+}
+
+nav ul {
+  list-style: none;
+}
+
+
+img {
+  border-style: none;
+}
+ 
