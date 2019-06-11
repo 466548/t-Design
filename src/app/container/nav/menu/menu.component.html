@@ -1,12 +1,20 @@
-<ul>
-  <li routerLinkActive="active">
-    <a routerLink="home">
-   <!--   <ne-icon-label [icon]="'inbox'">発行前一覧</ne-icon-label>--> 
-    </a>
-  </li>
-  <li routerLinkActive="active">
-    <a routerLink="home" >
-      新規作成
-    </a>
-  </li>
-</ul>
+<nav>
+     <!--  <ul>
+    <li>
+      <a routerLink="home">
+  <ne-icon-label [icon]="'inbox'">発行前一覧</ne-icon-label>
+      </a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="home" >
+        新規作成
+      </a>
+    </li>
+  </ul>--> 
+
+  <ul>
+      <li routerLinkActive="active"><a routerLink="home"><app-icon-label [icon]="'assignment'">新規作成</app-icon-label></a></li>
+      <li routerLinkActive="active"><a routerLink="home"><i class="material-icons">how_to_vote</i>検索一覧</a></li>
+      <li routerLinkActive="active"><a routerLink="home"><i class="material-icons">view_list</i>新着リスト</a></li>
+    </ul>
+</nav>
